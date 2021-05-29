@@ -1,3 +1,10 @@
-# Initial project
+# initial project
 fastapi
 uvicorn
+
+#for databases
+sqlalchemy
+psycopg2-binary
+
+#for env var
+python-dotenv
