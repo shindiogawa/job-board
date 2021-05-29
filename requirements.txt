@@ -14,3 +14,7 @@ pydantic
 
 #hashing
 passlib[bcrypt]
+
+#for testing
+pytest
+requests
