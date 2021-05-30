@@ -18,4 +18,6 @@ class Settings:
   ACCESS_TOKEN_EXPIRES_MINUTE = 30
   SECRET_KEY : str = os.getenv("SECRET_KEY")
   ALGORITHM = "HS256"
+
+  TEST_USER_EMAIL = "test@example.com"
 settings = Settings()
