@@ -23,3 +23,6 @@ pytest-cov
 #for jwt tokens
 python-jose
 python-multipart
+
+#for template
+jinja2
