@@ -19,3 +19,7 @@ passlib[bcrypt]
 pytest
 requests
 pytest-cov
+
+#for jwt tokens
+python-jose
+python-multipart
