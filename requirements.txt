@@ -10,7 +10,12 @@ psycopg2-binary
 python-dotenv
 
 #for email validation
-pydantic[email]
+pydantic
 
 #hashing
 passlib[bcrypt]
+
+#for testing
+pytest
+requests
+pytest-cov
