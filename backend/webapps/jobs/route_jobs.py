@@ -62,3 +62,11 @@ def home(request: Request, db: Session = Depends(get_db), msg:str = None):
 def jobs_detail(id:int, request: Request, db: Session = Depends(get_db)):
   job = retrieve_job(id=id, db=db)
   return templates.TemplateResponse("jobs/detail.html",{"request": request, "job": job})
+
+@router.get("/delete-job/")
+def show_jobs_to_delete(request : Request, db : Session = Depends(get_db)):
+    jobs = list_jobs(db=db)
+    return templates.TemplateResponse("jobs/show_jobs_to_delete.html", {
+        "request": request,
+        "jobs": jobs
+    })
